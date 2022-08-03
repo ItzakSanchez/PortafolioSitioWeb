@@ -1,10 +1,13 @@
+
 body{
-    background-color: white;
+    min-width: 100%;
     margin: 0 auto;
-    width: auto;
+    background-color: #222222;
+    color: #e7eef0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 header{
-        background-color: gray;
+        background-color: #132c40;
 }
 nav{
     display: flex;
@@ -23,28 +26,81 @@ nav{
     display: inline-block;
 }
 .header-list a{
-    color: black;
+    color: white;
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
-    padding: 24px 12px;
+    padding: 24px 12px;   
 }
+.header-list a:hover{
+    color: lightskyblue;
+}
+
 .hero{
     height: 600px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-image: url(./img/galaxia3.jpg);
-    background-size: auto;
+    background-size: cover;
     color: white;
 }
 .hero h1{
-    font-size: 120px;
+    font-size: 100px;
     margin: 50px 0 20px 0;
+    position: relative;
+}
+
+.hero h1 ::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(./img/galaxia3.jpg);
+    border-left: 2px solid white;
+    animation: typing 2s steps(20) forwards;
+}
+
+
+
+@keyframes typing {
+    0%{
+        background-image: url(./img/galaxia3.jpg);
+    }
+    100% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+        
+    }
+    
+}
+
+
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }    
+    70%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.header-list h1 ::before{
+    font-size: 100px;
+    margin: 50px 0 20px 0;
+    position: relative;
+}
+.hero p{
+    animation: fade-in 4s;
+    
 }
 
 .section-title{
-    font-size: 50px;
+    font-size: 40px;
     margin: 40px auto;
 }
 .sobre-mi-texto{
@@ -60,13 +116,12 @@ nav{
     margin: 30px;
 }
 .sobre-mi p{
-    font-size: 25px;
+    font-size: 20px;
 }
 .section-nohero{
-    margin: 0 70px;
-}
-body{
-    background-color: lightslategray;
+    width: 1050px;
+    margin: 0 auto;
+    color: #333333;
 }
 
 .proyecto-titulo, .proyecto-descripcion, .proyecto-fecha, .proyecto-boton{
@@ -116,7 +171,7 @@ body{
 
 
 .cuestionario{
-    margin: 20px 200px 40px 200px;
+    margin: 20px 135px 40px 135px;
     display: flex;
     flex-direction: column;
 }
@@ -147,11 +202,12 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0px 70px;
+    margin: 0px auto;
+    color: white;
 }
 footer{
     
-    background-color: gray;
+    background-color: #132c40;
 }
 .social-titulo{
     margin: 0;
