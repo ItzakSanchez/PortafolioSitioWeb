@@ -1,0 +1,239 @@
+
+body{
+    min-width: 100%;
+    margin: 0 auto;
+    background-color: #0d1117;
+    color: #f0f6fc;
+    font-family: "Source Code Pro", monospace;
+}
+header{
+        background-color: #132c40;
+}
+nav{
+    display: flex;
+    justify-content:  space-between;
+    margin: 0px auto; 
+    /* flex-wrap: nowrap; */
+}
+.header-list{
+    list-style-type: none;
+}
+.header-list{
+    margin: 2px;
+}
+.header-list li{
+    margin-top: 15px;
+    display: inline-block;
+}
+.header-list a{
+    color: white;
+    text-decoration: none;
+    font-family: "Source Code Pro", monospace;
+    font-size: 20px;
+    padding: 24px 12px;
+}
+.header-list a:hover{
+    color: lightskyblue;
+}
+
+.hero{
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: black;
+    background-size: cover;
+    color: blue;
+}
+.hero h1{
+    font-size: 110px;
+    font-weight: 800;
+    margin: 50px 0 20px 0;
+    position: relative;
+    animation: typing 3s steps(10);
+    width: max-content;
+}
+
+.hero span::before, .hero span::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: black;
+    animation: typewriter 3s steps(18) forwards;
+}
+
+.hero span::after{
+    width: 0.125em;
+    background: blue;
+    animation: typewriter 3s steps(18) forwards, blink .8s steps(20) infinite;
+
+}
+
+  @keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+
+  @keyframes blink {
+    from{border-color: transparent;}
+    to{
+        background: transparent;
+    }
+  }
+/* https://www.youtube.com/watch?v=Z7X7JzJJCCM */
+
+
+
+
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.hero p{
+    animation: fade-in 4s;
+    font-size: 20px;
+}
+
+.section-title{
+    font-size: 50px;
+    margin: 40px auto;
+}
+.sobre-mi-texto{
+    display: flex;
+    align-items: center;
+    margin: 0 30px;
+}
+
+.sobre-mi img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 30px;
+}
+.sobre-mi p{
+    font-size: 22px;
+}
+.section-nohero{
+    width: 1050px;
+    color: #8b949e;
+}
+
+.section-content{
+    margin: 100px auto 150px auto;
+}
+
+.proyecto-titulo, .proyecto-descripcion, .proyecto-fecha, .proyecto-boton{
+    margin: 10px 20px;
+}
+.proyecto-titulo, .proyecto-descripcion{
+    height: 82px;
+}
+.proyecto-container, .tecnologia-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 50px 0;
+}
+.proyectos-descripcion, .tecnologias-descripcion{
+    font-size: 22px;
+}
+.proyecto img, .tecnologia img{
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.proyecto{
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 285px;
+    margin: 0 4px;
+}
+
+
+
+.tecnologia{
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 300px;
+    margin: 0 5px;
+}
+
+.tecnologia-titulo{
+    margin: 10px 20px;
+}
+
+
+
+.cuestionario{
+    margin: 20px 135px 40px 135px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Source Code Pro", monospace;
+}
+.cuestionario lavel, .cuestionario input{
+    margin: 8px 0;
+    font-size: 22px;
+    width: 350px;
+    padding: 8px;
+    font-family: "Source Code Pro", monospace;
+}
+#enviar{
+    width: 150px;
+    padding:  5px;
+
+}
+.formulario-titulo{
+    font-size: 22px;
+    width: 740px;
+    font-family: "Source Code Pro", monospace;
+    margin: 10px 0;
+    padding: 8px;
+  }
+
+#form-text{
+    height:200px;
+}
+
+.nav-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto;
+    color: white;
+}
+footer{
+
+    background-color: #132c40;
+}
+.social-titulo{
+    margin: 0;
+}
+.footer-list{
+    list-style-type: none;
+    margin:0
+}
+.footer-list li{
+    display: inline-block;
+}
+
+img{
+    width: 65px;
+    height: 65px;
+}
