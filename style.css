@@ -36,6 +36,10 @@ nav{
     color: lightskyblue;
 }
 
+
+/* Hero */
+
+
 .hero{
     height: 600px;
     display: flex;
@@ -69,7 +73,12 @@ nav{
     width: 0.125em;
     background: blue;
     animation: typewriter 3s steps(18) forwards, blink .8s steps(20) infinite;
+}
 
+.hero p{
+    color: blue;
+    animation: fade-in 4s;
+    font-size: 20px;
 }
 
   @keyframes typewriter {
@@ -86,9 +95,6 @@ nav{
   }
 /* https://www.youtube.com/watch?v=Z7X7JzJJCCM */
 
-
-
-
 @keyframes fade-in {
     0%{
         opacity: 0;
@@ -102,10 +108,7 @@ nav{
 }
 
 
-.hero p{
-    animation: fade-in 4s;
-    font-size: 20px;
-}
+/* Sobre mo / general */
 
 .section-title{
     font-size: 50px;
@@ -134,6 +137,10 @@ nav{
 .section-content{
     margin: 100px auto 150px auto;
 }
+
+
+/* Proyecto */
+
 
 .proyecto-titulo, .proyecto-descripcion, .proyecto-fecha, .proyecto-boton{
     margin: 10px 20px;
@@ -165,7 +172,7 @@ nav{
     margin: 0 4px;
 }
 
-
+/* tecnologia */
 
 .tecnologia{
     background-color: white;
@@ -179,6 +186,8 @@ nav{
     margin: 10px 20px;
 }
 
+
+/* formulario */
 
 
 .cuestionario{
@@ -194,7 +203,7 @@ nav{
     padding: 8px;
     font-family: "Source Code Pro", monospace;
 }
-#enviar{
+#form-enviar{
     width: 150px;
     padding:  5px;
 
@@ -210,6 +219,28 @@ nav{
 #form-text{
     height:200px;
 }
+#proyectos button{font-size: 20px;}
+#proyectos button, #form-enviar{
+    width: 210px;
+    height: 50px;
+    color: black; 
+    background-color: white; 
+    border: 2px solid #132c40;
+    
+    font-family: "Source Code Pro", monospace;
+    border-radius: 10px;
+}
+#proyectos button:hover, #form-enviar:hover{
+    background-color: #132c40;
+    color: white;
+}
+#form-nombre, #form-email, #form-texto{
+    border:solid 2px #132c40 ;
+    border-radius: 10px;
+}
+
+/*footer */
+
 
 .nav-footer{
     display: flex;

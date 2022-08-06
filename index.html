@@ -78,7 +78,7 @@
             <p class="proyectos-descripcion">En esta seccion se enlistan los lenguajes de programacion y software que domino entre otras tecnologias y herramientas</p>
             <div class="tecnologia-container">
                 <article class="tecnologia">
-                    <a href=""><img src="img/lenguaje.jpg" alt="imagen-ilustrativa-proyecto"></a>
+                    <img src="img/lenguaje.jpg" alt="imagen-ilustrativa-proyecto">
                     <h2 class="tecnologia-titulo">Lenguajes de programación</h2>
                     <ul>
                         <li>HTML</li>
@@ -90,7 +90,7 @@
                     </ul>
                 </article>
                 <article class="tecnologia">
-                    <a href=""><img src="img/software.png" alt="imagen-ilustrativa-proyecto"></a>
+                    <img src="img/software.png" alt="imagen-ilustrativa-proyecto">
                     <h2 class="tecnologia-titulo">Software utilizado</h2>
                     <ul>
                         <li>Visual Studio Code</li>
@@ -100,7 +100,7 @@
                     </ul>
                 </article>
                 <article class="tecnologia">
-                    <a href=""><img src="img/otros.png" alt="imagen-ilustrativa-proyecto"></a>
+                    <img src="img/otros.png" alt="imagen-ilustrativa-proyecto">
                     <h2 class="tecnologia-titulo">Otras herramientas y tecnologias</h2>
                     <ul>
                         <li>Edicion de video en Sony Vegas 12</li>
@@ -112,7 +112,7 @@
         </section>
         <section class="contacto section-nohero section-content" id="contacto">
             <h1 class="contacto-titulo section-title">Contacto</h1>
-            <form action="" class="cuestionario">
+            <form action="https://formsubmit.co/edgaritzak@outlook.com" method="POST" class="cuestionario">
                 <table>
                     <tr>
                         <td>
@@ -124,10 +124,10 @@
                     </tr>
                     <tr>
                         <td>
-                             <input type="text" id="form-fnombre" placeholder="Nombre">
+                             <input type="text" id="form-nombre" placeholder="Nombre" required>
                         </td>
                         <td>
-                            <input type="email" id="form-email" placeholder="Email">
+                            <input type="email" id="form-email" placeholder="Email" required>
                         </td>
                     </tr>
                     <tr>
@@ -136,8 +136,8 @@
                         </td>
                     </tr>
                 </table>
-                <textarea name="contenido" id="" cols="5" rows="5"placeholder="Escribe aquí..." class="formulario-titulo"></textarea>
-                <input type="submit" id="enviar" class="btn btn-primary" value="Enviar">
+                <textarea name="contenido" id="form-texto" cols="5" rows="5"placeholder="Escribe aquí..." class="formulario-titulo" required></textarea>
+                <input type="submit" id="form-enviar" value="Enviar">
             </form>
         </section>
 
